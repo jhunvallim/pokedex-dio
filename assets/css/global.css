@@ -1,10 +1,26 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f6f8fc;
+}
+
 .content {
+  height: 100vh;
+  width: 100vw;
   padding: 1rem;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
 }
 
 .main-title {
@@ -13,16 +29,34 @@
 
 .pokemons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+@media screen and (min-width: 380px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .pokemon {
   display: flex;
   flex-direction: column;
-  margin: .5rem;
+  margin: 0.5rem;
   padding: 1rem;
   background-color: #49d0b0;
   color: #fff;
@@ -31,14 +65,14 @@
 
 .pokemon .number {
   color: #000;
-  opacity: .3;
-  font-size: .625rem;
+  opacity: 0.3;
+  font-size: 0.625rem;
   text-align: right;
 }
 
 .pokemon .name {
   color: #fff;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .pokemon .detail {
@@ -57,9 +91,9 @@
 .pokemon .detail .types .type {
   background-color: #61e1ca;
   color: #fff;
-  padding: .25rem .5rem;
-  margin: .25rem 0;
-  font-size: .625rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.625rem;
   border-radius: 1rem;
 }
 
