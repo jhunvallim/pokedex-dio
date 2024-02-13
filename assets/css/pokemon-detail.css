@@ -1,0 +1,124 @@
+.pokemon-detail {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-detail-content {
+  border-radius: 1rem;
+  margin: 10% auto;
+  width: 450px;
+}
+
+.close-btn {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-btn:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
+.detail-window {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.detail-window .detail {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  color: #888;
+}
+
+.detail-window h4 {
+  color: #333d47;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  filter: drop-shadow(0px 1px 2px #000);
+}
+
+.detail-window .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-radius: 0.5rem; */
+  margin-top: 20px;
+}
+
+.detail-window .detail img {
+  max-width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.detail-window .name {
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #fff;
+  filter: drop-shadow(0px 1px 2px #000);
+}
+.detail-window .number {
+  color: #fff;
+  filter: drop-shadow(0px 1px 2px #000);
+}
+
+.detail-window .types {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.detail-window .types .type {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0.25rem;
+  font-size: 0.725rem;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  box-shadow: 0px 1px 2px black;
+}
+
+.detail-window .stats {
+  list-style: none;
+  padding: 0 20px;
+  margin: 20px 0 0 0;
+  text-transform: uppercase;
+  color: #fff;
+  filter: drop-shadow(0px 1px 2px #000);
+}
+
+.detail-window .stats li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.detail-window .stats li span {
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .pokemon-detail-content {
+    width: 90%;
+  }
+}

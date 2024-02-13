@@ -14,6 +14,12 @@ body {
   background-color: #fff;
 }
 
+.main-title {
+  margin-left: 1rem;
+  font-family: "Pokemon Solid", sans-serif;
+  letter-spacing: 5px;
+}
+
 @media screen and (min-width: 992px) {
   .content {
     max-width: 992px;
@@ -21,8 +27,10 @@ body {
     margin: 1rem auto;
     border-radius: 1rem;
   }
-}
-
-.main-title {
-  margin-top: 0;
+  .main {
+    background-image: url("../img/pokeball-wallpaper.png  ");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }

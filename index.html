@@ -13,18 +13,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
 
   <!-- Project CSS -->
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/pokedex.css">
+  <link rel="stylesheet" href="./assets/css/pokemon-detail.css">
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
 </head>
 
-<body>
+<body class="main">
 
   <section class="content">
     <h1 class="main-title">Pokedex</h1>
 
     <ol id="pokemonList" class="pokemons">
+
       <!-- ..... Pokemons here ..... -->
     </ol>
 
@@ -33,6 +40,12 @@
         Load More
       </button>
     </div>
+
+    <div id="pokemon-detail" class="pokemon-detail">
+      <div id="color-type" class="pokemon-detail-content">
+        <span class="close-btn" onclick="closeDetail()"><img src="./assets/img/back-left-arrow.png" width=20px></img></span>
+        <p id="pokemon-detail-content">Detail content</p>
+      </div>
 
   </section>
 
