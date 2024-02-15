@@ -124,7 +124,7 @@
   color: #fff;
   padding: 0.25rem 0.5rem;
   margin: 0.25rem 0;
-  font-size: 0.625rem;
+  font-size: 0.725rem;
   letter-spacing: 1px;
   text-align: center;
   border-radius: 1rem;
@@ -133,7 +133,7 @@
 }
 
 .pokemons .detail img {
-  max-width: 100%;
+  max-width: 50%;
   height: 70px;
   align-self: flex-end;
 }

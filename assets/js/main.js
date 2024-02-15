@@ -3,8 +3,8 @@ const loadMoreButton = document.getElementById("loadMoreButton");
 const pokemonDetail = document.getElementById("pokemon-detail");
 const pokemonDetailContent = document.getElementById("pokemon-detail-content");
 
-const maxRecords = 151;
-const limit = 20;
+const maxRecords = 151; // Total of pokemons in the API 1302
+const limit = 10; // Number of pokemons to load each time
 let offset = 0;
 
 function openDetail(pokemon) {
@@ -68,8 +68,7 @@ function loadPokemonItens(offset, limit, callback) {
   pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
     const newHtml = pokemons.map(convertPokemonToLi).join("");
     pokemonList.innerHTML += newHtml;
-
-    // Chame a função de callback, se fornecida
+    
     if (callback) {
       callback();
     }
